@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { LetterText,CircleUser,Lightbulb,Factory } from 'lucide-react';
-import { MdLightbulbOutline } from "react-icons/md";
+// import { MdLightbulbOutline } from "react-icons/md";
 import { MdOutlineDeliveryDining } from "react-icons/md"; 
 import Header from './Header';
 import Dropdown from '@/components/Dropdown';
@@ -39,7 +39,7 @@ const CreateContainer = ({ handleGetPrompts, prompt, handleChange }) => {
           onChange={handleChange}
         />
         <Dropdown
-          img={<MdLightbulbOutline size={25}/>}
+          // img={<MdLightbulbOutline size={25}/>}
           options={outputTypeOptions}
           name="content_theme"
           label="Content Theme"
