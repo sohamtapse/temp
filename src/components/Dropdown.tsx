@@ -13,7 +13,7 @@ const Dropdown = ({ name, onChange, options, label, isHorizontal,img }) => {
   };
 
   return (
-    <div className="relative flex flex-col flex-1 border-2 rounded-lg bg-[#ffffff] min-w-[200px] p-4 hover:border-purple-500   ">
+    <div className="relative flex flex-col flex-1 border-2 rounded-lg bg-[#ffffff] min-w-[200px] p-4 hover:border-[rgb(0,255,255)]   ">
       {/* Header Section */}
       <span
         className={`${

@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { LetterText,CircleUser,Lightbulb,Factory } from 'lucide-react';
-// import { MdLightbulbOutline } from "react-icons/md";
-import { MdOutlineDeliveryDining } from "react-icons/md"; 
+import { LetterText,CircleUser,Lightbulb,Factory,Mailbox } from 'lucide-react';
 import Header from './Header';
 import Dropdown from '@/components/Dropdown';
 import Image from 'next/image';
@@ -32,14 +30,14 @@ const CreateContainer = ({ handleGetPrompts, prompt, handleChange }) => {
           onChange={handleChange}
         />
         <Dropdown
-          img={<MdOutlineDeliveryDining  size={25}/>}
+          img={<Mailbox />}
           options={deliveryMethodOptions}
           name="delivery_method"
           label="Delivery Method"
           onChange={handleChange}
         />
         <Dropdown
-          // img={<MdLightbulbOutline size={25}/>}
+          img={<Lightbulb />}
           options={outputTypeOptions}
           name="content_theme"
           label="Content Theme"

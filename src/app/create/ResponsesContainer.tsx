@@ -1,9 +1,5 @@
 "use client";
-import { LetterText,CircleUser,Factory } from 'lucide-react';
-import { Lightbulb } from 'lucide-react';
-import { MdLightbulbOutline } from "react-icons/md";
-import { MdOutlineDeliveryDining } from "react-icons/md"; 
-
+import { LetterText,CircleUser,Factory,Lightbulb,Mailbox   } from 'lucide-react';
 import Dropdown from '@/components/Dropdown';
 import Button from '@/components/UI/Button';
 import Loader from '@/components/UI/Loader';
@@ -54,7 +50,7 @@ const ResponsesContainer = ({
             isHorizontal={true}
           />
           <Dropdown
-            img={<MdOutlineDeliveryDining  size={25}/>}
+            img={<Mailbox />}
             options={deliveryMethodOptions}
             name="delivery_method"
             label="Delivery Method"
@@ -62,7 +58,7 @@ const ResponsesContainer = ({
             isHorizontal={true}
           />
           <Dropdown
-            img={<MdLightbulbOutline size={25}/>}
+            img={<Lightbulb />}
             options={outputTypeOptions}
             name="content_theme"
             label="Content Theme"
